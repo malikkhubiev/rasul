@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автохимчистка Хайземберг | Профессиональная чистка автомобилей в Кисловодске</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства. Звоните: +7 (999) 123-45-67">
+    <meta name="keywords" content="химчистка автомобилей, химчистка салона, мойка автомобилей, полировка кузова, озонирование салона, автохимчистка Кисловодск, чистка салона автомобиля, защита кузова">
+    <meta name="author" content="Химчистка Хайземберг">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="ru">
+    <meta name="geo.region" content="RU-MOW">
+    <meta name="geo.placename" content="Кисловодск">
+    <meta name="geo.position" content="55.751244;37.618423">
+    <meta name="ICBM" content="55.751244, 37.618423">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hiezenberg.vercel.app/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Химчистка Хайземберг | Профессиональная чистка автомобилей в Кисловодске">
+    <meta property="og:description" content="Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства.">
+    <meta property="og:url" content="https://hiezenberg.vercel.app/">
+    <meta property="og:site_name" content="Химчистка Хайземберг">
+    <meta property="og:image" content="https://hiezenberg.vercel.app/Main.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Химчистка Хайземберг - профессиональная чистка автомобилей">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#084E34">
+    <meta name="msapplication-TileColor" content="#084E34">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Химчистка Хайземберг">
+
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Yandex Webmaster Verification -->
+    <meta name="yandex-verification" content="YOUR_YANDEX_WEBMASTER_VERIFICATION_CODE">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://unpkg.com/feather-icons/dist/feather.min.js" as="script">
+    <link rel="preload" href="Main.svg" as="image">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="Main.svg">
+    <link rel="apple-touch-icon" href="Main.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.css">
+    <style>
+        :root {
+            --primary-green: #084E34;
+            --secondary-green: #176335;
+            --accent-yellow: #FFFB02;
+            --white: #FFFFFF;
+            --black: #000000;
+            --gray-100: #F5F5F5;
+            --gray-200: #E5E5E5;
+            --gray-300: #D4D4D4;
+            --gray-400: #A3A3A3;
+            --gray-500: #737373;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-800: #262626;
+            --gray-900: #171717;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(0, 0, 0, 0.98);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary-green);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary-green);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--black) 0%, var(--gray-900) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, var(--primary-green) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, var(--secondary-green) 0%, transparent 50%);
+            opacity: 0.1;
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroGlow {
+            0% { opacity: 0.05; }
+            100% { opacity: 0.15; }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-title .highlight {
+            color: var(--secondary-green);
+            position: relative;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--gray-300);
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            max-width: 800px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(8, 78, 52, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--secondary-green);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-green);
+            transform: translateY(-2px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 0;
+            background: var(--gray-900);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-title .highlight {
+            color: var(--secondary-green);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-300);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            background: var(--gray-800);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-700);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-green), var(--secondary-green));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-green);
+            box-shadow: 0 20px 40px rgba(23, 99, 53, 0.2);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .service-card p {
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            overflow: hidden;
+            padding: 6rem 0;
+            background: var(--black);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        .about-text .highlight {
+            color: var(--secondary-green);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--gray-300);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: var(--gray-300);
+        }
+
+        .features-list li::before {
+            content: '✓';
+            color: var(--secondary-green);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 6rem 0;
+            background: var(--gray-900);
+        }
+
+        .map-container {
+            background: var(--gray-800);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .location-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .location-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray-800);
+            border-radius: 12px;
+            border: 1px solid var(--gray-700);
+        }
+
+        .location-card .icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .location-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+
+        .location-card p {
+            color: var(--gray-300);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 0;
+            background: var(--black);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: var(--gray-800);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid var(--gray-700);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-green);
+            box-shadow: 0 15px 30px rgba(23, 99, 53, 0.2);
+        }
+
+        .contact-card .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .contact-card p {
+            color: var(--gray-300);
+            margin-bottom: 2.5rem;
+        }
+
+        .vazhno {
+            text-decoration: none;
+            font-weight: 500;
+            background-color: var(--primary-green);
+            padding: 15px;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .vazhno:hover {
+            background-color: white;
+            color: var(--primary-green)
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            padding: 3rem 0 2rem;
+            border-top: 1px solid var(--gray-700);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--gray-300);
+            text-decoration: none;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: var(--secondary-green);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-700);
+            color: var(--gray-400);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .header{
+                padding: 20px;
+            }
+
+            .nav-container{
+                width: 100%;
+                max-width: unset;
+            }
+
+            .logo{
+                font-size: 1.3rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card,
+            .contact-card {
+                padding: 2rem;
+            }
+
+            .hero {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Parallax effects */
+        .parallax-element {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Loading animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--gray-700);
+            border-top: 3px solid var(--secondary-green);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .line{
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px;
+            max-width: 100%;
+            margin-bottom: 30px;
+            transform: rotate(5deg);
+            font-weight: bold;
+        }
+
+        .main_img{
+            max-width: 100%;
+        }
+        
+        .square{
+            background-color: var(--primary-green);
+            color: white !important;
+            padding: 10px 25px 15px 25px;
+        }
+
+        .pad{
+            padding: 0 30px;
+        }
+        
+        @media (max-width: 1300px) {
+            .line{
+                transform: unset;
+                background-color: transparent;
+                padding: 0;
+            }
+            .item{
+                background-color: var(--primary-green);
+                padding: 10px 0;
+            }
+            .square{
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <h1 class="logo">Химчистка <span class="square">Хайземберг</span></h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#map">Контакты</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" role="banner">
+        <div class="hero-content fade-in">
+            <img class="main_img" src="Main.svg" alt="Логотип Химчистка Хайземберг - профессиональная чистка автомобилей">
+            <p class="hero-subtitle pad">
+                Качественная чистка салона и кузова с использованием современных технологий
+            </p>
+            <div class="cta-buttons pad">
+                <a href="#services" class="btn btn-primary" aria-label="Посмотреть наши услуги">
+                    <i data-feather="star" aria-hidden="true"></i>
+                    Наши услуги
+                </a>
+                <a href="#contact" class="btn btn-secondary" aria-label="Заказать услуги химчистки">
+                    <i data-feather="phone" aria-hidden="true"></i>
+                    Заказать
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" role="main">
+        <div class="container">
+            <header class="section-title fade-in">
+                <h2>Наши <span class="square">услуги</span></h2>
+                <p class="section-subtitle">
+                    Полный спектр услуг по химчистке автомобилей с гарантией качества
+                </p>
+            </header>
+            
+            <div class="services-grid" role="list">
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="droplet"></i>
+                    </div>
+                    <h3>Химчистка салона</h3>
+                    <p>Глубокая очистка всех поверхностей салона: сиденья, коврики, потолок, дверные панели с использованием профессиональных средств</p>
+                </article>
+                
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h3>Защита кузова</h3>
+                    <p>Полировка, воскование и нанесение защитных покрытий для сохранения внешнего вида автомобиля</p>
+                </article>
+                
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="wind"></i>
+                    </div>
+                    <h3>Озонирование</h3>
+                    <p>Устранение неприятных запахов и бактерий с помощью озоновой обработки салона</p>
+                </article>
+                
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <h3>Экспресс-чистка</h3>
+                    <p>Быстрая химчистка основных поверхностей салона для поддержания чистоты между полными обработками</p>
+                </article>
+                
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="octagon"></i>
+                    </div>
+                    <h3>Мойка кузова</h3>
+                    <p>Комплексная мойка и полировка кузова с использованием качественных автошампуней и восков</p>
+                </article>
+                
+                <article class="service-card fade-in" role="listitem">
+                    <div class="service-icon" aria-hidden="true">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3>Премиум-пакет</h3>
+                    <p>Полный комплекс услуг: химчистка салона, мойка кузова, полировка и защитное покрытие</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h2>Почему <span class="square">мы</span></h2>
+                    <span class="line">
+                        <span class="item">Профессионализм, </span><span class="item">трудолюбие и </span><span class="item">проверенные технологии</span>.
+                    </span>
+                    <p>
+                        Мы гарантируем высокое качество работ и индивидуальный подход к каждому клиенту. 
+                        Все используемые нами средства безопасны для здоровья и экологически чисты.
+                    </p>
+                    <ul class="features-list">
+                        <li>Опытный мастер</li>
+                        <li>Современное оборудование</li>
+                        <li>Экологически безопасные средства</li>
+                        <li>Гарантия качества работ</li>
+                        <li>Доступные цены</li>
+                    </ul>
+                </div>
+                <div class="about-image slide-in-right">
+                    <img src="why.png" 
+                         alt="Процесс химчистки автомобиля">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2><span class="square">Как</span> нас найти</h2>
+                <p class="section-subtitle">
+                    Мы расположены в удобном месте с хорошей транспортной доступностью
+                </p>
+            </div>
+            
+            <div class="map-container fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3729499444345!2d37.61841431593138!3d55.75169998055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2sRed%20Square!5e0!3m2!1sen!2sru!4v1651234567890" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <div class="location-info">
+                <div class="location-card fade-in">
+                    <div class="icon">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h3>Адрес</h3>
+                    <p>ул. Примерная, 123<br>Кисловодск, Россия</p>
+                </div>
+                
+                <div class="location-card fade-in">
+                    <div class="icon">
+                        <i data-feather="clock"></i>
+                    </div>
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Свяжитесь с <span class="square">нами</span></h2>
+                <p class="section-subtitle">
+                    Готовы ответить на ваши вопросы и принять заказ
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <div class="icon">
+                        <i data-feather="phone"></i>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p>Звоните нам в рабочее время</p>
+                    <a class="vazhno" href="tel:+79991234567">+7 (999) 123-45-67</a>
+                </div>
+                
+                <div class="contact-card fade-in">
+                    <div class="icon">
+                        <i data-feather="mail"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Напишите нам на почту</p>
+                    <a class="vazhno" href="mailto:info@heisenbergclean.ru">info@heisenbergclean.ru</a>
+                </div>
+                
+                <div class="contact-card fade-in">
+                    <div class="icon">
+                        <i data-feather="message-circle"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Быстрое сообщение</p>
+                    <a class="vazhno" href="https://wa.me/79991234567">+7 (999) 123-45-67</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Химчистка Хайземберг</h3>
+                    <p>Профессиональная химчистка автомобилей с использованием современных технологий и качественных средств.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <p><a href="#services">Химчистка салона</a></p>
+                    <p><a href="#services">Защита кузова</a></p>
+                    <p><a href="#services">Озонирование</a></p>
+                    <p><a href="#services">Экспресс-чистка</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>ул. Примерная, 123</p>
+                    <p>Кисловодск, Россия</p>
+                    <p>+7 (999) 123-45-67</p>
+                    <p>info@heisenbergclean.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Химчистка Хайземберг. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Химчистка Хайземберг",
+        "description": "Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства.",
+        "url": "https://heisenbergclean.ru",
+        "telephone": "+7 (999) 123-45-67",
+        "email": "info@heisenbergclean.ru",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Примерная, 123",
+            "addressLocality": "Кисловодск",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "55.751244",
+            "longitude": "37.618423"
+        },
+        "openingHours": [
+            "Mo-Fr 09:00-20:00",
+            "Sa-Su 10:00-18:00"
+        ],
+        "image": "https://hiezenberg.vercel.app/Main.svg",
+        "logo": "https://hiezenberg.vercel.app/Main.svg",
+        "sameAs": [
+            "https://wa.me/79991234567"
+        ],
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "City",
+            "name": "Кисловодск"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Услуги химчистки автомобилей",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Химчистка салона",
+                        "description": "Глубокая очистка всех поверхностей салона: сиденья, коврики, потолок, дверные панели с использованием профессиональных средств"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Защита кузова",
+                        "description": "Полировка, воскование и нанесение защитных покрытий для сохранения внешнего вида автомобиля"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Озонирование",
+                        "description": "Устранение неприятных запахов и бактерий с помощью озоновой обработки салона"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Экспресс-чистка",
+                        "description": "Быстрая химчистка основных поверхностей салона для поддержания чистоты между полными обработками"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Мойка кузова",
+                        "description": "Комплексная мойка и полировка кузова с использованием качественных автошампуней и восков"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Премиум-пакет",
+                        "description": "Полный комплекс услуг: химчистка салона, мойка кузова, полировка и защитное покрытие"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script src="analytics-tracking.js"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            
+            parallaxElements.forEach(element => {
+                const speed = element.dataset.speed || 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add click effects to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(255, 255, 255, 0.3)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.left = e.offsetX - 10 + 'px';
+                ripple.style.top = e.offsetY - 10 + 'px';
+                ripple.style.width = '20px';
+                ripple.style.height = '20px';
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.98);
+                padding: 2rem;
+                border-top: 1px solid var(--gray-700);
+            }
+            
+            @media (max-width: 768px) {
+                .nav-menu {
+                    display: none;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

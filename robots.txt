@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hiezenberg.vercel.app/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow specific file types
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+Allow: *.ico
+
+# Block access to sensitive files
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.tmp$
+
+# Allow search engines to access important pages
+Allow: /index.html
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /map

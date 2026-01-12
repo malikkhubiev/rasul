@@ -1,0 +1,84 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Химчистка Хайземберг",
+    "description": "Профессиональная химчистка автомобилей в Москве. Полный спектр услуг: химчистка салона, защита кузова, озонирование, экспресс-чистка.",
+    "url": "https://heisenbergclean.ru",
+    "telephone": "+7 (999) 123-45-67",
+    "email": "info@heisenbergclean.ru",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Примерная, 123",
+        "addressLocality": "Москва",
+        "addressRegion": "Московская область",
+        "postalCode": "101000",
+        "addressCountry": "RU"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.751244",
+        "longitude": "37.618423"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "10:00",
+            "closes": "18:00"
+        }
+    ],
+    "image": "https://hiezenberg.vercel.app/Main.svg",
+    "logo": "https://hiezenberg.vercel.app/Main.svg",
+    "sameAs": [
+        "https://wa.me/79991234567"
+    ],
+    "priceRange": "$$",
+    "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+    "currenciesAccepted": "RUB",
+    "areaServed": {
+        "@type": "City",
+        "name": "Москва"
+    },
+    "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3729499444345!2d37.61841431593138!3d55.75169998055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2sRed%20Square!5e0!3m2!1sen!2sru!4v1651234567890",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Александр Петров"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "reviewBody": "Отличная химчистка! Машина как новая после обработки. Рекомендую!"
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Мария Иванова"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "reviewBody": "Быстро, качественно, недорого. Очень довольна результатом."
+        }
+    ]
+}
