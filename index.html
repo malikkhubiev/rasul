@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автохимчистка Хайземберг | Профессиональная чистка автомобилей в Кисловодске</title>
+    <title>Автохимчистка Кисловодск | Хайземберг - Химчистка салона автомобиля в Кисловодске</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства. Звоните: +7 (999) 123-45-67">
-    <meta name="keywords" content="химчистка автомобилей, химчистка салона, мойка автомобилей, полировка кузова, озонирование салона, автохимчистка Кисловодск, чистка салона автомобиля, защита кузова">
+    <meta name="description" content="Автохимчистка Хайземберг в Кисловодске. Профессиональная химчистка салона автомобиля, чистка салона авто, сухой туман. Качественная автохимчистка недорого. Звоните: +7 (933) 330-33-31">
+    <meta name="keywords" content="автохимчистка кисловодск, хайземберг кисловодск, химчистка авто кисловодск, химчистка салона автомобиля кисловодск, чистка салона авто кисловодск, мойка и химчистка салона кисловодск, автохимчистка хайземберг, химчистка хайземберг кисловодск, автохимчистка хайзенберг кисловодск, химчистка салона недорого кисловодск, профессиональная химчистка салона кисловодск, качественная химчистка авто кисловодск, лучшая автохимчистка кисловодск">
     <meta name="author" content="Химчистка Хайземберг">
     <meta name="robots" content="index, follow">
     <meta name="language" content="ru">
-    <meta name="geo.region" content="RU-MOW">
+    <meta name="geo.region" content="RU-STA">
     <meta name="geo.placename" content="Кисловодск">
-    <meta name="geo.position" content="55.751244;37.618423">
-    <meta name="ICBM" content="55.751244, 37.618423">
+    <meta name="geo.position" content="43.922291;42.712772">
+    <meta name="ICBM" content="43.922291, 42.712772">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://hiezenberg.vercel.app/">
+    <link rel="canonical" href="https://heisemberg.vercel.app/">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Химчистка Хайземберг | Профессиональная чистка автомобилей в Кисловодске">
-    <meta property="og:description" content="Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства.">
-    <meta property="og:url" content="https://hiezenberg.vercel.app/">
+    <meta property="og:title" content="Автохимчистка Кисловодск | Хайземберг - Химчистка салона автомобиля">
+    <meta property="og:description" content="Автохимчистка Хайземберг в Кисловодске. Профессиональная химчистка салона автомобиля, чистка салона авто, сухой туман. Качественная автохимчистка недорого.">
+    <meta property="og:url" content="https://heisemberg.vercel.app/">
     <meta property="og:site_name" content="Химчистка Хайземберг">
-    <meta property="og:image" content="https://hiezenberg.vercel.app/Main.svg">
+    <meta property="og:image" content="https://heisemberg.vercel.app/Main.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Химчистка Хайземберг - профессиональная чистка автомобилей">
+    <meta property="og:image:alt" content="Автохимчистка Хайземберг Кисловодск - профессиональная химчистка салона автомобиля">
     <meta property="og:locale" content="ru_RU">
     
     <!-- Additional SEO Meta Tags -->
@@ -36,7 +36,7 @@
     <meta name="msapplication-TileColor" content="#084E34">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Химчистка Хайземберг">
+    <meta name="apple-mobile-web-app-title" content="Автохимчистка Хайземберг">
 
     <link rel="preconnect" href="https://unpkg.com">
     
@@ -56,6 +56,31 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.css">
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c0be7b34-29ff-4e36-85b2-a43a76e9e8c1&amp;lang=ru_RU" type="text/javascript"></script>
+    <script>
+        // YandexMap
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('yandexMap', {
+                    center: [43.922291, 42.712772],
+                    zoom: 20,
+                }, {
+                    searchControlProvider: 'yandex#search',
+                }),
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: "Автохимчистка Хайземберг",
+                    balloonContent: 'Добро пожаловать!'
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'maplogo.svg',
+                    iconImageSize: [180, 180],
+                    iconImageOffset: [-20, -150]
+                });
+            myMap.geoObjects.add(myPlacemark);
+        });
+
+    </script>
+
     <style>
         :root {
             --primary-green: #084E34;
@@ -808,9 +833,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home" role="banner">
         <div class="hero-content fade-in">
-            <img class="main_img" src="Main.svg" alt="Логотип Химчистка Хайземберг - профессиональная чистка автомобилей">
+            <img class="main_img" src="Main.svg" alt="Автохимчистка Хайземберг Кисловодск - профессиональная химчистка салона автомобиля">
             <p class="hero-subtitle pad">
-                Качественная чистка салона и кузова с использованием современных технологий
+                Профессиональная автохимчистка в Кисловодске. Химчистка салона автомобиля, чистка салона авто с использованием современных технологий
             </p>
             <div class="cta-buttons pad">
                 <a href="#services" class="btn btn-primary" aria-label="Посмотреть наши услуги">
@@ -831,7 +856,7 @@
             <header class="section-title fade-in">
                 <h2>Наши <span class="square">услуги</span></h2>
                 <p class="section-subtitle">
-                    Полный спектр услуг по химчистке автомобилей с гарантией качества
+                    Профессиональная автохимчистка в Кисловодске. Химчистка салона автомобиля, чистка салона авто с гарантией качества
                 </p>
             </header>
             
@@ -840,48 +865,24 @@
                     <div class="service-icon" aria-hidden="true">
                         <i data-feather="droplet"></i>
                     </div>
-                    <h3>Химчистка салона</h3>
-                    <p>Глубокая очистка всех поверхностей салона: сиденья, коврики, потолок, дверные панели с использованием профессиональных средств</p>
+                    <h3>Химчистка салона автомобиля</h3>
+                    <p>Профессиональная химчистка салона автомобиля в Кисловодске. Глубокая очистка всех поверхностей салона: сиденья, коврики, потолок, дверные панели с использованием профессиональных средств</p>
                 </article>
-                
+
                 <article class="service-card fade-in" role="listitem">
                     <div class="service-icon" aria-hidden="true">
-                        <i data-feather="shield"></i>
+                        <i data-feather="award"></i>
                     </div>
-                    <h3>Защита кузова</h3>
-                    <p>Полировка, воскование и нанесение защитных покрытий для сохранения внешнего вида автомобиля</p>
+                    <h3>Премиум-услуга</h3>
+                    <p>Полная химчистка мягкой мебели с выездом на дом</p>
                 </article>
                 
                 <article class="service-card fade-in" role="listitem">
                     <div class="service-icon" aria-hidden="true">
                         <i data-feather="wind"></i>
                     </div>
-                    <h3>Озонирование</h3>
-                    <p>Устранение неприятных запахов и бактерий с помощью озоновой обработки салона</p>
-                </article>
-                
-                <article class="service-card fade-in" role="listitem">
-                    <div class="service-icon" aria-hidden="true">
-                        <i data-feather="zap"></i>
-                    </div>
-                    <h3>Экспресс-чистка</h3>
-                    <p>Быстрая химчистка основных поверхностей салона для поддержания чистоты между полными обработками</p>
-                </article>
-                
-                <article class="service-card fade-in" role="listitem">
-                    <div class="service-icon" aria-hidden="true">
-                        <i data-feather="octagon"></i>
-                    </div>
-                    <h3>Мойка кузова</h3>
-                    <p>Комплексная мойка и полировка кузова с использованием качественных автошампуней и восков</p>
-                </article>
-                
-                <article class="service-card fade-in" role="listitem">
-                    <div class="service-icon" aria-hidden="true">
-                        <i data-feather="award"></i>
-                    </div>
-                    <h3>Премиум-пакет</h3>
-                    <p>Полный комплекс услуг: химчистка салона, мойка кузова, полировка и защитное покрытие</p>
+                    <h3>Сухой туман</h3>
+                    <p>Удаление запахов в авто в Кисловодске. Применяем технологию сухого тумана для устранения неприятных запахов, бактерий и вирусов в салоне автомобиля</p>
                 </article>
             </div>
         </div>
@@ -897,8 +898,8 @@
                         <span class="item">Профессионализм, </span><span class="item">трудолюбие и </span><span class="item">проверенные технологии</span>.
                     </span>
                     <p>
-                        Мы гарантируем высокое качество работ и индивидуальный подход к каждому клиенту. 
-                        Все используемые нами средства безопасны для здоровья и экологически чисты.
+                        Автохимчистка Хайземберг в Кисловодске гарантирует высокое качество работ и индивидуальный подход к каждому клиенту. 
+                        Все используемые нами средства безопасны для здоровья и экологически чисты. Профессиональная химчистка салона автомобиля по доступным ценам.
                     </p>
                     <ul class="features-list">
                         <li>Опытный мастер</li>
@@ -910,7 +911,7 @@
                 </div>
                 <div class="about-image slide-in-right">
                     <img src="why.png" 
-                         alt="Процесс химчистки автомобиля">
+                         alt="Автохимчистка Хайземберг Кисловодск - процесс химчистки салона автомобиля">
                 </div>
             </div>
         </div>
@@ -922,17 +923,11 @@
             <div class="section-title fade-in">
                 <h2><span class="square">Как</span> нас найти</h2>
                 <p class="section-subtitle">
-                    Мы расположены в удобном месте с хорошей транспортной доступностью
+                    Автохимчистка Хайземберг расположена в оживлённом районе Кисловодска с отличной транспортной доступностью
                 </p>
             </div>
-            
-            <div class="map-container fade-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3729499444345!2d37.61841431593138!3d55.75169998055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2sRed%20Square!5e0!3m2!1sen!2sru!4v1651234567890" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+
+            <div class="map-container" id="yandexMap" style="width: 100%; height: 400px;"></div>
             
             <div class="location-info">
                 <div class="location-card fade-in">
@@ -940,7 +935,7 @@
                         <i data-feather="map-pin"></i>
                     </div>
                     <h3>Адрес</h3>
-                    <p>ул. Примерная, 123<br>Кисловодск, Россия</p>
+                    <p>ул. Боргустанская, 7<br>Кисловодск, Ставропольский край, Россия</p>
                 </div>
                 
                 <div class="location-card fade-in">
@@ -948,7 +943,7 @@
                         <i data-feather="clock"></i>
                     </div>
                     <h3>Часы работы</h3>
-                    <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                    <p>Понедельник - Суббота: 9:00 - 21:00<br>Воскресенье - выходной</p>
                 </div>
             </div>
         </div>
@@ -970,17 +965,8 @@
                         <i data-feather="phone"></i>
                     </div>
                     <h3>Телефон</h3>
-                    <p>Звоните нам в рабочее время</p>
-                    <a class="vazhno" href="tel:+79991234567">+7 (999) 123-45-67</a>
-                </div>
-                
-                <div class="contact-card fade-in">
-                    <div class="icon">
-                        <i data-feather="mail"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>Напишите нам на почту</p>
-                    <a class="vazhno" href="mailto:info@heisenbergclean.ru">info@heisenbergclean.ru</a>
+                    <p>Звоните нам в рабочее время для записи на автохимчистку</p>
+                    <a class="vazhno" href="tel:+79333303331">+7 (933) 330-33-31</a>
                 </div>
                 
                 <div class="contact-card fade-in">
@@ -988,8 +974,8 @@
                         <i data-feather="message-circle"></i>
                     </div>
                     <h3>WhatsApp</h3>
-                    <p>Быстрое сообщение</p>
-                    <a class="vazhno" href="https://wa.me/79991234567">+7 (999) 123-45-67</a>
+                    <p>Быстрое сообщение для записи на химчистку салона</p>
+                    <a class="vazhno" href="https://wa.me/79333303331">+7 (933) 330-33-31</a>
                 </div>
             </div>
         </div>
@@ -1000,29 +986,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Химчистка Хайземберг</h3>
-                    <p>Профессиональная химчистка автомобилей с использованием современных технологий и качественных средств.</p>
+                    <h3>Автохимчистка Хайземберг</h3>
+                    <p>Профессиональная автохимчистка в Кисловодске. Химчистка салона автомобиля с использованием современных технологий и качественных средств.</p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Услуги</h3>
                     <p><a href="#services">Химчистка салона</a></p>
-                    <p><a href="#services">Защита кузова</a></p>
-                    <p><a href="#services">Озонирование</a></p>
-                    <p><a href="#services">Экспресс-чистка</a></p>
+                    <p><a href="#services">Премиум-услуга</a></p>
+                    <p><a href="#services">Сухой туман</a></p>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Контакты</h3>
-                    <p>ул. Примерная, 123</p>
-                    <p>Кисловодск, Россия</p>
-                    <p>+7 (999) 123-45-67</p>
+                    <p>ул. Боргустанская, 7</p>
+                    <p>Кисловодск, Ставропольский край, Россия</p>
+                    <p>+7 (933) 330-33-31</p>
                     <p>info@heisenbergclean.ru</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Химчистка Хайземберг. Все права защищены.</p>
+                <p>&copy; <span id="year">2026</span> Химчистка Хайземберг. Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -1032,30 +1017,37 @@
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Химчистка Хайземберг",
-        "description": "Профессиональная химчистка автомобилей в Кисловодске. Химчистка салона, защита кузова, озонирование. Современные технологии, качественные средства.",
-        "url": "https://heisenbergclean.ru",
-        "telephone": "+7 (999) 123-45-67",
+        "name": "Автохимчистка Хайземберг",
+        "alternateName": "Химчистка Хайземберг",
+        "description": "Профессиональная автохимчистка в Кисловодске. Химчистка салона автомобиля, чистка салона авто, сухой туман для устранения запахов. Качественная автохимчистка недорого.",
+        "url": "https://heisemberg.vercel.app/",
+        "telephone": "+7 (933) 330-33-31",
         "email": "info@heisenbergclean.ru",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "ул. Примерная, 123",
+            "streetAddress": "ул. Боргустанская, 7",
             "addressLocality": "Кисловодск",
+            "addressRegion": "Ставропольский край",
+            "postalCode": "357736",
             "addressCountry": "RU"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "55.751244",
-            "longitude": "37.618423"
+            "latitude": "43.922291",
+            "longitude": "42.712772"
         },
-        "openingHours": [
-            "Mo-Fr 09:00-20:00",
-            "Sa-Su 10:00-18:00"
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:00",
+                "closes": "21:00"
+            }
         ],
-        "image": "https://hiezenberg.vercel.app/Main.svg",
-        "logo": "https://hiezenberg.vercel.app/Main.svg",
+        "image": "https://heisemberg.vercel.app/Main.svg",
+        "logo": "https://heisemberg.vercel.app/Main.svg",
         "sameAs": [
-            "https://wa.me/79991234567"
+            "https://wa.me/79333303331"
         ],
         "priceRange": "$$",
         "serviceArea": {
@@ -1064,13 +1056,13 @@
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Услуги химчистки автомобилей",
+            "name": "Услуги автохимчистки в Кисловодске",
             "itemListElement": [
                 {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Химчистка салона",
+                        "name": "Химчистка салона автомобиля",
                         "description": "Глубокая очистка всех поверхностей салона: сиденья, коврики, потолок, дверные панели с использованием профессиональных средств"
                     }
                 },
@@ -1078,40 +1070,16 @@
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Защита кузова",
-                        "description": "Полировка, воскование и нанесение защитных покрытий для сохранения внешнего вида автомобиля"
+                        "name": "Премиум-услуга",
+                        "description": "Полная химчистка мягкой мебели с выездом на дом"
                     }
                 },
                 {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Озонирование",
-                        "description": "Устранение неприятных запахов и бактерий с помощью озоновой обработки салона"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Экспресс-чистка",
-                        "description": "Быстрая химчистка основных поверхностей салона для поддержания чистоты между полными обработками"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Мойка кузова",
-                        "description": "Комплексная мойка и полировка кузова с использованием качественных автошампуней и восков"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Премиум-пакет",
-                        "description": "Полный комплекс услуг: химчистка салона, мойка кузова, полировка и защитное покрытие"
+                        "name": "Сухой туман",
+                        "description": "Применяем технологию устранения неприятных запахов, бактерий и вирусов"
                     }
                 }
             ]
@@ -1122,6 +1090,12 @@
             "reviewCount": "127"
         }
     }
+    </script>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        const year = document.getElementById("year");
+        year.innerText = currentYear;
     </script>
 
     <!-- Scripts -->
