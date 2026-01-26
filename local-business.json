@@ -6,7 +6,6 @@
     "description": "Профессиональная автохимчистка в Кисловодске. Химчистка салона автомобиля, чистка салона авто, сухой туман для устранения запахов. Качественная автохимчистка недорого.",
     "url": "https://heisenbergclean.ru",
     "telephone": "+7 (933) 330-33-31",
-    "email": "info@heisenbergclean.ru",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "ул. Боргустанская, 7",
